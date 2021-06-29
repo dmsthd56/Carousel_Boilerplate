@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Carousel Project</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="image-box">
+        <img src="images/vanilla_coding_logo.png" />
+      </div>
+      <h1>Carousel</h1>
+      <!-- Carousel Start -->
+      <div class="outline">
+        <!--버튼-->
+            <span class="leftBtn" id="leftBtn">◁</span>
+            <span class="rightBtn" id="rightBtn">▷</span>
+        <!--이미지-->
+            <ul class="banner" id="banner">
+              <li><img id="imgs" src="images/image-1.png"></li>
+            </ul>
+        <!--디스크-->
+            <ol class="disc" id="disc">
+              <li onclick="imgs('images/image-1.png')"></li>
+              <li onclick="imgs('images/image-2.png')"></li>
+              <li onclick="imgs('images/image-3.png')"></li>
+              <li onclick="imgs('images/image-4.png')"></li>             
+              <li onclick="imgs('images/image-5.png')"></li>
+            </ol>
+          </div>
+      <!-- Carousel End -->
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
